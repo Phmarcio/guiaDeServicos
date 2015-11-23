@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>{% block titulo %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/layout.css"/>
+</head>
+<body>
+	{% include "menu.html" %}
+	{% block corpo %}
+	{% endblock %}
+	{% include "rodape.html" %}
+</body>
+</html>
